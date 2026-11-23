@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MiMundoLibro, biblioteca virtual de historias y libros.">
+    <title>MiMundoLibro | Biblioteca Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="encabezado">
+        <div class="contenedor navegacion">
+            <a href="#inicio" class="logo">MiMundoLibro</a>
+
+            <nav aria-label="Navegación principal">
+                <ul class="menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#autores">Autores</a></li>
+                    <li><a href="#categorias">Categorías</a></li>
+                </ul>
+            </nav>
+
+            <div class="acceso">
+                <a href="#ingresar" class="boton-secundario">Ingresar</a>
+                <a href="#registrarse" class="boton">Registrarse</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="bienvenida" id="inicio">
+            <div class="contenedor bienvenida-contenido">
+                <div class="bienvenida-texto">
+                    <p class="etiqueta">BIENVENIDO A MIMUNDOLIBRO</p>
+                    <h1>Descubre tu próxima gran historia</h1>
+                    <p>
+                        Explora nuestra biblioteca virtual, conoce nuevas
+                        historias y disfruta del maravilloso mundo de la lectura.
+                    </p>
+                    <a href="#catalogo" class="boton">Explorar catálogo</a>
+                </div>
+
+                <div class="bienvenida-imagen" aria-label="Ilustración de libros">
+                    <div class="libro-decorativo">
+                        <span>MiMundoLibro</span>
+                        <strong>Un mundo<br>de historias</strong>
+                        <span>Lee · Imagina · Descubre</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalogo contenedor" id="catalogo">
+            <div class="titulo-seccion">
+                <div>
+                    <p class="etiqueta">EXPLORA Y DESCUBRE</p>
+                    <h2>Libros destacados</h2>
+                </div>
+                <p>Encuentra una historia para ti.</p>
+            </div>
+
+            <div class="buscador">
+                <input
+                    type="search"
+                    id="busqueda"
+                    placeholder="Buscar libros por título o autor..."
+                    aria-label="Buscar libros"
+                >
+                <button type="button" id="boton-buscar">Buscar</button>
+            </div>
+
+            <div class="libros-grid" id="lista-libros">
+
+                <article class="libro">
+                    <div class="portada portada-uno">
+                        <span>MiMundoLibro</span>
+                        <h3>La victoria del corazón</h3>
+                    </div>
+                    <div class="libro-info">
+                        <h3>La victoria del corazón</h3>
+                        <p class="autor">Diana Corredor</p>
+                        <button
+                            type="button"
+                            class="boton boton-libro"
+                            data-libro="La victoria del corazón"
+                        >
+                            Ver detalles
+                        </button>
+                    </div>
+                </article>
+
+                <article class="libro">
+                    <div class="portada portada-dos">
+                        <span>MiMundoLibro</span>
+                        <h3>Mi destino es tu amor</h3>
+                    </div>
+                    <div class="libro-info">
+                        <h3>Mi destino es tu amor</h3>
+                        <p class="autor">Diana Corredor</p>
+                        <button
+                            type="button"
+                            class="boton boton-libro"
+                            data-libro="Mi destino es tu amor"
+                        >
+                            Ver detalles
+                        </button>
+                    </div>
+                </article>
+
+                <article class="libro">
+                    <div class="portada portada-tres">
+                        <span>MiMundoLibro</span>
+                        <h3>Cuando seas feliz</h3>
+                    </div>
+                    <div class="libro-info">
+                        <h3>Cuando seas feliz</h3>
+                        <p class="autor">Diana Corredor</p>
+                        <button
+                            type="button"
+                            class="boton boton-libro"
+                            data-libro="Cuando seas feliz"
+                        >
+                            Ver detalles
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+
+            <p id="mensaje-busqueda" class="mensaje-busqueda" aria-live="polite"></p>
+        </section>
+
+        <section class="informacion" id="autores">
+            <div class="contenedor">
+                <p class="etiqueta">NUESTROS AUTORES</p>
+                <h2>Historias creadas para compartir</h2>
+                <p>
+                    Conoce a los autores y descubre las historias que dan
+                    vida a nuestra biblioteca virtual.
+                </p>
+                <p class="nombre-autora">Diana Corredor</p>
+                <p>Autora</p>
+            </div>
+        </section>
+
+        <section class="categorias contenedor" id="categorias">
+            <p class="etiqueta">ENCUENTRA TU LECTURA</p>
+            <h2>Explora por categorías</h2>
+
+            <div class="categorias-lista">
+                <span>Ficción</span>
+                <span>Romance</span>
+                <span>Aventura</span>
+                <span>Relatos</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <a href="#inicio" class="logo">MiMundoLibro</a>
+            <p>Un mundo de historias por descubrir.</p>
+            <p>&copy; 2026 MiMundoLibro. Biblioteca Virtual.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
